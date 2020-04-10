@@ -2,7 +2,6 @@ package lambda;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BiFunction;
 
 public class Lambda05 {
 

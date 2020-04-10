@@ -20,6 +20,10 @@ public class Lambda13 {
 		toUpperCaseByLambdaExpression(list);
 		System.out.println("====");
 		toUpperCaseByMethodReference(list);
+		System.out.println("====");
+		toUpperCaseByReplacAll(list);
+		System.out.println("====");
+		removeForSomeConditions(list);
 	}
 	
 	//By using Lambda Expression
@@ -35,5 +39,18 @@ public class Lambda13 {
 		    .map(String::toUpperCase) //Although toUpperCase is not static method (instance method) we can use in Method Reference
 		    .forEach(System.out::println);
 	}
+	
+	//By using replaceAll()
+	public static void toUpperCaseByReplacAll(List<String> list) {
+		list.replaceAll(t->t.toUpperCase());
+		System.out.println(list);
+	}
+	
+	//How to use removeIf()
+	public static void removeForSomeConditions(List<String> list) {
+		list.removeIf(t->t.length()<5);
+		System.out.println(list);
+	}
+	
 
 }
