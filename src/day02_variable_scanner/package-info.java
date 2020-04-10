@@ -1,0 +1,1 @@
+package day02_variable_scanner;

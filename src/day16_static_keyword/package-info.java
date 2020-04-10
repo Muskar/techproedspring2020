@@ -1,0 +1,1 @@
+package day16_static_keyword;
