@@ -31,7 +31,9 @@ public class Lambda01 {
 		    .forEach(t->System.out.println(t));        //                                     10
                                                        //                                     14
                                                        //                                     ..	
+		
 		functionalCode02(list);
+		
 		System.out.println("=====");
 		functionalCode03(list);
 	}

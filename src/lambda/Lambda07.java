@@ -21,8 +21,10 @@ public class Lambda07 {
 		list.add(15);
 		
 		sortedElements(list);
+		
 		System.out.println("====");
 		distinctElements(list);
+		
 		System.out.println("====");
 		sortedDistinctElements(list);
 		
@@ -30,7 +32,7 @@ public class Lambda07 {
 	
 	public static void sortedElements(List<Integer> list) {
 	       list.stream()
-			   .sorted()// To sort elements use sort()
+			   .sorted()// To sort elements use sorted()
 			   .forEach(System.out::println);
     }
 	
@@ -42,7 +44,7 @@ public class Lambda07 {
 	
 	public static void sortedDistinctElements(List<Integer> list) {
 	       list.stream()
-			   .distinct()// To get distinct elements, duplicate elements are printed just once
+			   .distinct()
 			   .sorted()
 			   .forEach(System.out::println);
     }

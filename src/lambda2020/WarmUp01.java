@@ -16,11 +16,7 @@ public class WarmUp01 {
 		list.add("Tucker");
 		
 		// Print square of the length of the elements whose length is less than 6 and contains the letter "r"
-		list.stream()
-		    .filter(t->t.length()<6) 
-		    .filter(t->t.contains("r"))
-		    .map(t->t.length()*t.length() + " ")
-		    .forEach(System.out::print);
+		// Hint:You can use filter() more than once
 		
 
 	}

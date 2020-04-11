@@ -28,12 +28,14 @@ public class Lambda02 {
 		
 		System.out.println("====");
 		//Use Type 3 ==> Method Reference ==> Use Java methods
+		//Print the evens on the console
 		list.stream()
 		    .filter(t->t%2==0) //filter() method accepts the elements if the right part (t%2==0) is true
 		    .forEach(System.out::print); // 10 14 16
 		
 		System.out.println("====");
-		//Use Type 3 to print the elements which are divisible by 3
+		//Use Type 3 ==> Method Reference ==> Use Java methods
+		//Print the elements which are divisible by 3 on the console
 		list.stream()
 		    .filter(t->t%3==0)
 			.forEach(System.out::print);		

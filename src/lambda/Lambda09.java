@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 public class Lambda09 {
 
 	public static void main(String[] args) {
-		// Print the square of all elements in "a new list" by using "Functional" programming
+		// Print the square of all elements in a "new list" by using "Functional" programming
 		List<Integer> list = new ArrayList<Integer>();
 		list.add(12);
 		list.add(9);
@@ -23,10 +23,10 @@ public class Lambda09 {
 
 	}
 	
-	public static List<Integer> squareList(List<Integer> list){
+	public static int squareList(List<Integer> list){
 		return list.stream()
 				   .map(t->t*t)
-				   .collect(Collectors.toList());
+				   .collect(Collectors.toList()).size();
 	}
 	
 	//Note: If a method returns Stream<T> it is Intermediate Operation

@@ -16,7 +16,7 @@ public class Lambda04 {
 		list.add("Tucker");
 		
 		//Use Functional Code 
-		//Get the elements whose lengths are more than 5 and print their lengths on the console.
+		//Get the elements whose lengths are more than 5 then print their lengths on the console.
 		list.stream()
 		    .filter(t->t.length()>5)
 		    .map(t->t.length() + " ")
@@ -28,5 +28,4 @@ public class Lambda04 {
 		    .filter(t->t.contains("i"))
 		    .forEach(System.out::print);
 	}
-
 }

@@ -21,29 +21,34 @@ public class Lambda08 {
 		list.add("Christ");
 		
 		naturalSortedElements(list);
+		
 		System.out.println("====");
 		reverseSortedElements(list);
+		
 		System.out.println("====");
 		lengthSortedElements(list);
 
 	}
 	
+	//Sort the elements in natural order
 	public static void naturalSortedElements(List<String> list) {
 	       list.stream()
 			   .sorted(Comparator.naturalOrder())// To sort elements you may also use sorted(Comparator.naturalOrder()) method
 			   .forEach(System.out::println);
     }
 	
+	//Sort the elements in reverse order after getting distinct elements
 	public static void reverseSortedElements(List<String> list) {
 	       list.stream()
-			   .distinct()// To get distinct elements, duplicate elements are printed just once
+			   .distinct()
 			   .sorted(Comparator.reverseOrder()) //To sort elements in reverse order, use sorted(Comparator.reverseOrder()) method
 			   .forEach(System.out::println);
     }
 	
+	//Sort the elements according to their length after getting distinct elements
 	public static void lengthSortedElements(List<String> list) {
 	       list.stream()
-			   .distinct()// To get distinct elements, duplicate elements are printed just once
+			   .distinct()
 			   .sorted(Comparator.comparing(t->t.length())) //To define a rule to sort elements, use sorted(Comparator.comparing()) method
 			   .forEach(System.out::println);
  }
