@@ -6,7 +6,7 @@ import java.util.List;
 public class Lambda04 {
 
 	public static void main(String[] args) {
-		//Print the squares of the number of characters in the list [Ali, Mark, Jackson, Amanda, Chris, Tucker] by Functional Programming
+		//Print the number of characters in the list [Ali, Mark, Jackson, Amanda, Chris, Tucker] by Functional Programming
 		List<String> list = new ArrayList<String>();
 		list.add("Ali");
 		list.add("Mark");
