@@ -23,10 +23,10 @@ public class Lambda09 {
 
 	}
 	
-	public static int squareList(List<Integer> list){
+	public static List<Integer> squareList(List<Integer> list){
 		return list.stream()
 				   .map(t->t*t)
-				   .collect(Collectors.toList()).size();
+				   .collect(Collectors.toList());
 	}
 	
 	//Note: If a method returns Stream<T> it is Intermediate Operation
