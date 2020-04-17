@@ -110,12 +110,6 @@ public class Lambda12 {
 		//Find the number of courses according to the course name.
 		System.out.println(courseList.stream()
 		                             .collect(Collectors.groupingBy(Course::getCourseName, Collectors.counting())));
-		
-		
-		
-		
-		
-		
 
 	}
 
